@@ -28,6 +28,7 @@ public class VolunteerVictimGUI extends JFrame {
     private JButton addButton; // Button to add victims
     private JButton removeButton; // Button to remove selected victim
 
+    private JLabel backgroundLabel;  // Declare as a class field
 
     private JButton nextQuestion;
     private JButton prevQuestion;
@@ -61,10 +62,17 @@ public class VolunteerVictimGUI extends JFrame {
             }
         });
 
+        // Initialize the background label with an image
+        //ImageIcon backgroundIcon= new ImageIcon("Bears.png");
+        //backgroundLabel=new JLabel(backgroundIcon);
+        //backgroundLabel.setLayout(null);
+        //backgroundLabel.setBounds(200,200, 200,200);
+        //add(backgroundLabel,BorderLayout.CENTER);
+
         //Question panel
         JLabel questionLabel = new JLabel("Loading Questions",JLabel.CENTER);
         questionLabel.setPreferredSize(new Dimension(1, 1));
-        questionLabel.setFont(new Font("Serif", Font.BOLD, 45));
+        questionLabel.setFont(new Font("Serif", Font.BOLD, 30));
         System.out.println(new File(".").getAbsolutePath());
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
 

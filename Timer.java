@@ -33,7 +33,7 @@ public class Timer extends JPanel {
         phoneAFriendButton = new JButton("Phone a Friend");
         resumeButton = new JButton("Resume Time");
         //Create a FlowLayout with increased horizontal and vertical gaps
-        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 15, 50);
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 15, 30);
         this.setLayout(flowLayout); // Set the layout manager to the JPanel (Timer)
 
         this.add(timerLabel);
